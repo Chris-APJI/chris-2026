@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+ <title>Canvas example</title>
+ <style>
+    canvas {
+        border: 2px solid black;
+    }
+ </style>
+  </head>
+ <body>
+<canvas id="myCanvas" width="400" height="200"></canvas>
+<script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");  
+   
+   // Create Linear gradient
+   const gradient = ctx.createLinearGradient(
+    0,
+    0,
+    canvas.width,
+    canvas.height
+   )
+   gradient.addColorStop(0, "blue"); // Add color 
+   
+</script> 
+</body>
+ </html>
